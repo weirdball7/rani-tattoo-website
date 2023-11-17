@@ -97,14 +97,30 @@ section {
 
 /* ------- CSS FOR GOOGLE MAPS ------  */
 
-/* .map-section {
-    background-color: antiquewhite;
+.map-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+
+.map-container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
 }
 
 #map {
+    border: 1px solid black;
+    /* background-color: beige; */
     height: 400px;
     width: 100%;
-} */
+}
 
 /* -------------------------------------- */
 
