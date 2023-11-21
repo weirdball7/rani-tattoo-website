@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="AdminStyle.css" />
+    <link rel="stylesheet" href="../Admin/AdminStyle.css" />
     <title>Document</title>
   </head>
   <body>
@@ -13,14 +13,15 @@
       <form action="get">
         <div class="container">
           <label for="">Name</label>
-          <input type="text" required />
+          <input id="user-name" type="text" required />
           <label for="">Password</label>
-          <input type="password" required />
+          <input id="password" type="password" required />
           <label for="">Repeat password</label>
-          <input type="password" required />
-          <button>Confirm</button>
+          <input id="password-repeat" type="password" required />
+          <button type="button" id="btn">Confirm</button>
         </div>
       </form>
     </main>
+    <script src="../Admin/admin.js"></script>
   </body>
 </html>
