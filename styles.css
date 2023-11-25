@@ -200,6 +200,12 @@ section {
     border-radius: 15px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     color: #000;
     text-decoration: none;
