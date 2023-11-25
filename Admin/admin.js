@@ -1,38 +1,24 @@
 document.addEventListener('DOMContentLoaded', function(){
     let userName; 
     let password; 
-    let passwordRepeat; 
-    let user;
+    // let passwordRepeat; 
     let btn = document.getElementById('btn');
-    console.log(user);
-
+    let admin = {
+        'userName': 'admin',
+        'password': 12345
+    };
+    console.log('hello world');
     const buttonClick = () => {
         userName = document.getElementById('user-name').value;
         password = document.getElementById('password').value;
-        passwordRepeat = document.getElementById('password-repeat').value;
+        // passwordRepeat = document.getElementById('password-repeat').value;
         userName = userName.toLowerCase();
-        console.log(userName, password, passwordRepeat);
-
-        // if (userName === 'rotem') {
-        //     alert('Sucsses');
-        // }else{
-        //     alert('Error');
-        // };
-
-        if(password.length >= 6){
-            if(password === passwordRepeat){
-                user = {
-                    'userName':userName,
-                    'password':password
-                };
-                console.log(user);
-            }else{
-                alert('passwords Dont match');
-            };
-        }else{
-            alert('password too short');
+        if(password !== admin['password'] && userName !== admin['userName'] ){
+            alert('shit-sucks');
+        }else {
+            console.log('succses');
+            window.location.assign('http://127.0.0.1:5500/Admin/page-update.html');
         };
-
 
     };
 

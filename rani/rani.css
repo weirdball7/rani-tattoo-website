@@ -31,8 +31,9 @@ main {
 
 .intro-description {
     border: 1px solid black;
+    height: 30%;
     overflow: scroll;
-    /* max-width: 40%; */
+    width: 40%;
     text-align: center;
 }
 
@@ -95,4 +96,9 @@ main {
     /* background-color: aquamarine;
      */
     
+}
+
+a {
+    color: #000;
+    text-decoration: none;
 }
